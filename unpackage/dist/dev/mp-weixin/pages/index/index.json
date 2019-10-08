@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "swiper": "/pages/component/swiper",
+    "serch": "/pages/index/serch/serch"
+  }
+}
