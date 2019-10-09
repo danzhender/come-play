@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "swiper": "/pages/component/swiper",
-    "serch": "/pages/index/serch/serch"
+    "swiper": "/pages/index/swiper",
+    "serch": "/pages/index/serch/serch",
+    "merchants-users": "/pages/index/merchantsUsers"
   }
 }

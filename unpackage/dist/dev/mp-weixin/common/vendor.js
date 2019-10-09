@@ -7489,9 +7489,9 @@ module.exports = g;
 
 /***/ }),
 /* 4 */
-/*!**************************************!*\
-  !*** D:/约玩儿/come-playing/pages.json ***!
-  \**************************************/
+/*!***********************************!*\
+  !*** D:/约玩儿/come-play/pages.json ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8389,24 +8389,24 @@ main();
 /*! exports provided: _from, _id, _inBundle, _integrity, _location, _phantomChildren, _requested, _requiredBy, _resolved, _shasum, _spec, _where, author, bugs, bundleDependencies, deprecated, description, devDependencies, files, gitHead, homepage, license, main, name, repository, scripts, version, default */
 /***/ (function(module) {
 
-module.exports = {"_from":"@dcloudio/uni-stat@next","_id":"@dcloudio/uni-stat@2.0.0-23320190923002","_inBundle":false,"_integrity":"sha512-MnftsvgOac3q1FCOBPzivbFn8GNQFo7D2DY325HeEZyFCWgx5GEwHpGYjT1PQU6v7DaDn0ruxa3ObdpUIYbmZw==","_location":"/@dcloudio/uni-stat","_phantomChildren":{},"_requested":{"type":"tag","registry":true,"raw":"@dcloudio/uni-stat@next","name":"@dcloudio/uni-stat","escapedName":"@dcloudio%2funi-stat","scope":"@dcloudio","rawSpec":"next","saveSpec":null,"fetchSpec":"next"},"_requiredBy":["#USER","/","/@dcloudio/vue-cli-plugin-uni"],"_resolved":"https://registry.npmjs.org/@dcloudio/uni-stat/-/uni-stat-2.0.0-23320190923002.tgz","_shasum":"0c400c140ca0b3c05f52d25f11583cf05a0c4e9a","_spec":"@dcloudio/uni-stat@next","_where":"/Users/fxy/Documents/DCloud/HbuilderX-plugins/release/uniapp-cli","author":"","bugs":{"url":"https://github.com/dcloudio/uni-app/issues"},"bundleDependencies":false,"deprecated":false,"description":"","devDependencies":{"@babel/core":"^7.5.5","@babel/preset-env":"^7.5.5","eslint":"^6.1.0","rollup":"^1.19.3","rollup-plugin-babel":"^4.3.3","rollup-plugin-clear":"^2.0.7","rollup-plugin-commonjs":"^10.0.2","rollup-plugin-copy":"^3.1.0","rollup-plugin-eslint":"^7.0.0","rollup-plugin-json":"^4.0.0","rollup-plugin-node-resolve":"^5.2.0","rollup-plugin-replace":"^2.2.0","rollup-plugin-uglify":"^6.0.2"},"files":["dist","package.json","LICENSE"],"gitHead":"fed4c73fb9142a1b277dd79313939cad90693d3e","homepage":"https://github.com/dcloudio/uni-app#readme","license":"Apache-2.0","main":"dist/index.js","name":"@dcloudio/uni-stat","repository":{"type":"git","url":"git+https://github.com/dcloudio/uni-app.git","directory":"packages/uni-stat"},"scripts":{"build":"NODE_ENV=production rollup -c rollup.config.js","dev":"NODE_ENV=development rollup -w -c rollup.config.js"},"version":"2.0.0-23320190923002"};
+module.exports = {"_from":"@dcloudio/uni-stat@next","_id":"@dcloudio/uni-stat@2.0.0-23220190921001","_inBundle":false,"_integrity":"sha512-xlHjc5YqMrdr4rIKE/aMXlfzLDVxbCY31e/jH+n2NtFA14KDtNIHzsgNM0h0Mq8IUfDFtMMPmmlay59RTmHonQ==","_location":"/@dcloudio/uni-stat","_phantomChildren":{},"_requested":{"type":"tag","registry":true,"raw":"@dcloudio/uni-stat@next","name":"@dcloudio/uni-stat","escapedName":"@dcloudio%2funi-stat","scope":"@dcloudio","rawSpec":"next","saveSpec":null,"fetchSpec":"next"},"_requiredBy":["#USER","/","/@dcloudio/vue-cli-plugin-uni"],"_resolved":"https://registry.npmjs.org/@dcloudio/uni-stat/-/uni-stat-2.0.0-23220190921001.tgz","_shasum":"63200bbfbdcc4c696ed0be335fa14613757c4026","_spec":"@dcloudio/uni-stat@next","_where":"/Users/fxy/Documents/DCloud/HbuilderX-plugins/release/uniapp-cli","author":"","bugs":{"url":"https://github.com/dcloudio/uni-app/issues"},"bundleDependencies":false,"deprecated":false,"description":"","devDependencies":{"@babel/core":"^7.5.5","@babel/preset-env":"^7.5.5","eslint":"^6.1.0","rollup":"^1.19.3","rollup-plugin-babel":"^4.3.3","rollup-plugin-clear":"^2.0.7","rollup-plugin-commonjs":"^10.0.2","rollup-plugin-copy":"^3.1.0","rollup-plugin-eslint":"^7.0.0","rollup-plugin-json":"^4.0.0","rollup-plugin-node-resolve":"^5.2.0","rollup-plugin-replace":"^2.2.0","rollup-plugin-uglify":"^6.0.2"},"files":["dist","package.json","LICENSE"],"gitHead":"d26b206188ff9e5de659870e5f4e8b2d24d8f02f","homepage":"https://github.com/dcloudio/uni-app#readme","license":"Apache-2.0","main":"dist/index.js","name":"@dcloudio/uni-stat","repository":{"type":"git","url":"git+https://github.com/dcloudio/uni-app.git","directory":"packages/uni-stat"},"scripts":{"build":"NODE_ENV=production rollup -c rollup.config.js","dev":"NODE_ENV=development rollup -w -c rollup.config.js"},"version":"2.0.0-23220190921001"};
 
 /***/ }),
 /* 7 */
-/*!*******************************************************!*\
-  !*** D:/约玩儿/come-playing/pages.json?{"type":"style"} ***!
-  \*******************************************************/
+/*!****************************************************!*\
+  !*** D:/约玩儿/come-play/pages.json?{"type":"style"} ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "usingComponents": { "swiper": "/pages/component/swiper", "serch": "/pages/index/serch/serch" } }, "pages/basics/layout": { "usingComponents": {} }, "pages/basics/background": { "usingComponents": {} }, "pages/basics/text": { "usingComponents": {} }, "pages/basics/icon": { "usingComponents": {} }, "pages/basics/button": { "usingComponents": {} }, "pages/basics/design": { "usingComponents": {} }, "pages/basics/tag": { "usingComponents": {} }, "pages/basics/avatar": { "usingComponents": {} }, "pages/basics/progress": { "usingComponents": {} }, "pages/basics/shadow": { "usingComponents": {} }, "pages/basics/loading": { "usingComponents": {} }, "pages/component/bar": { "usingComponents": {} }, "pages/component/nav": { "usingComponents": {} }, "pages/component/list": { "usingComponents": {} }, "pages/component/card": { "usingComponents": {} }, "pages/component/form": { "usingComponents": {} }, "pages/component/timeline": { "usingComponents": {} }, "pages/component/chat": { "usingComponents": {} }, "pages/component/swiper": { "usingComponents": {} }, "pages/component/modal": { "usingComponents": {} }, "pages/component/steps": { "usingComponents": {} }, "pages/plugin/indexes": { "usingComponents": {} }, "pages/plugin/animation": { "usingComponents": {} }, "pages/plugin/drawer": { "usingComponents": {} }, "pages/plugin/verticalnav": { "usingComponents": {} }, "pages/index/serch/serch": { "usingComponents": {} }, "pages/index/serch": {}, "pages/index/SerchDetail": {}, "pages/index/serch/sech": {}, "pages/index/serch/SerchDetail": { "usingComponents": {} } }, "globalStyle": { "navigationBarBackgroundColor": "#0081ff", "navigationBarTitleText": "ColorUi for UniApp", "navigationStyle": "custom", "navigationBarTextStyle": "white" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": {}, "pages/basics/layout": {}, "pages/basics/background": {}, "pages/basics/text": {}, "pages/basics/icon": {}, "pages/basics/button": {}, "pages/basics/design": {}, "pages/basics/tag": {}, "pages/basics/avatar": {}, "pages/basics/progress": {}, "pages/basics/shadow": {}, "pages/basics/loading": {}, "pages/component/bar": {}, "pages/component/nav": {}, "pages/component/list": {}, "pages/component/card": {}, "pages/component/form": {}, "pages/component/timeline": {}, "pages/component/chat": {}, "pages/component/swiper": {}, "pages/component/modal": {}, "pages/component/steps": {}, "pages/plugin/indexes": {}, "pages/plugin/animation": {}, "pages/plugin/drawer": {}, "pages/plugin/verticalnav": {}, "pages/index/serch/serch": {}, "pages/index/serch/SerchDetail": {} }, "globalStyle": { "navigationBarBackgroundColor": "#0081ff", "navigationBarTitleText": "ColorUi for UniApp", "navigationStyle": "custom", "navigationBarTextStyle": "white" } };exports.default = _default;
 
 /***/ }),
 /* 8 */
-/*!******************************************************!*\
-  !*** D:/约玩儿/come-playing/pages.json?{"type":"stat"} ***!
-  \******************************************************/
+/*!***************************************************!*\
+  !*** D:/约玩儿/come-play/pages.json?{"type":"stat"} ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
