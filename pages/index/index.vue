@@ -1,10 +1,10 @@
 <template>
 	<view>
-		<scroll-view scroll-y class="page">
+		<view scroll-y class="page">
 			<image src="https://cdn.nlark.com/yuque/0/2019/png/280374/1552996358228-assets/web-upload/e256b4ce-d9a4-488b-8da2-032747213982.png"
 			 mode="widthFix" class="response"></image>
 			<view class="cu-tabbar-height"></view>
-		</scroll-view>
+		</view>
 		<Serch></Serch>
 		<view class="swiper-contains">
 		<Swiper></Swiper>
@@ -13,7 +13,7 @@
 		<basics v-if="PageCur=='basics'"></basics>
 		<components v-if="PageCur=='component'"></components>
 		<plugin v-if="PageCur=='plugin'"></plugin>
-
+		<view class="cu-tabbar-height"></view>
 		<view class="cu-bar tabbar bg-white shadow foot">
 			<view class="action" @click="NavChange" data-cur="basics">
 				<view class='cuIcon-cu-image'>

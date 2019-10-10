@@ -27,7 +27,8 @@
     "pages/plugin/drawer",
     "pages/plugin/verticalnav",
     "pages/index/serch/serch",
-    "pages/index/serch/SerchDetail"
+    "pages/index/serch/SerchDetail",
+    "pages/merchants/home"
   ],
   "subPackages": [],
   "window": {

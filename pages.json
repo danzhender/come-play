@@ -108,6 +108,10 @@
 		{
 		    "path" : "pages/index/serch/SerchDetail",
 		    "style" : {}
+		},
+		{
+		    "path" : "pages/merchants/home",
+		    "style" : {}
 		}
     ],
 	"globalStyle": {

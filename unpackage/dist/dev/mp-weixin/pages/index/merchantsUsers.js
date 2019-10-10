@@ -105,64 +105,82 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
-{
-  data: function data() {
-    return {
-      isCard: false,
-      mechantsList: [
-      {
-        id: 0,
-        title: '阿甘锅贴',
-        img: '../../static/阿甘锅贴.png',
-        content: '生煎锅贴  |  孙河 孙河康营家园易事达购物中心' },
-
-      {
-        id: 1,
-        title: '阿甘锅贴',
-        img: '../../static/阿甘锅贴.png',
-        content: '生煎锅贴  |  孙河 孙河康营家园易事达购物中心' },
-
-      {
-        id: 2,
-        title: '阿甘锅贴',
-        img: '../../static/阿甘锅贴.png',
-        content: '生煎锅贴  |  孙河 孙河康营家园易事达购物中心' },
-
-      {
-        id: 3,
-        title: '阿甘锅贴',
-        img: '../../static/阿甘锅贴.png',
-        content: '生煎锅贴  |  孙河 孙河康营家园易事达购物中心' }] };
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
 
 
 
-  },
-  methods: {
-    IsCard: function IsCard(e) {
-      this.isCard = e.detail.value;
-    } } };exports.default = _default;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var _merchants = _interopRequireDefault(__webpack_require__(/*! ../../static/merchants.json */ 277));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = { data: function data() {return { isCard: false, merchantsList: _merchants.default.data // merchantsList: [{
+      // 		id: 0,
+      // 		title: '阿甘锅贴',
+      // 		img: '../../static/阿甘锅贴.png',
+      // 		description: '生煎锅贴  |  孙河 孙河康营家园易事达购物中心'
+      // 	},
+      // 	{
+      // 		id: 1,
+      // 		title: '阿甘锅贴',
+      // 		img: '../../static/阿甘锅贴.png',
+      // 		description: '生煎锅贴  |  孙河 孙河康营家园易事达购物中心'
+      // 	},
+      // 	{
+      // 		id: 2,
+      // 		title: '阿甘锅贴',
+      // 		img: '../../static/阿甘锅贴.png',
+      // 		description: '生煎锅贴  |  孙河 孙河康营家园易事达购物中心'
+      // 	},
+      // 	{
+      // 		id: 3,
+      // 		title: '阿甘锅贴',
+      // 		img: '../../static/阿甘锅贴.png',
+      // 		description: '生煎锅贴  |  孙河 孙河康营家园易事达购物中心'
+      // 	},
+      // ]
+    };}, methods: { IsCard: function IsCard(e) {this.isCard = e.detail.value;}, merchantsDetail: function merchantsDetail(id) {uni.navigateTo({ url: "../merchants/home?id=".concat(id) });} } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
