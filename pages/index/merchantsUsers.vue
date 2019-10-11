@@ -29,31 +29,6 @@
 			return {
 				isCard: false,
 				merchantsList:MerchantsList.data
-				// merchantsList: [{
-				// 		id: 0,
-				// 		title: '阿甘锅贴',
-				// 		img: '../../static/阿甘锅贴.png',
-				// 		description: '生煎锅贴  |  孙河 孙河康营家园易事达购物中心'
-				// 	},
-				// 	{
-				// 		id: 1,
-				// 		title: '阿甘锅贴',
-				// 		img: '../../static/阿甘锅贴.png',
-				// 		description: '生煎锅贴  |  孙河 孙河康营家园易事达购物中心'
-				// 	},
-				// 	{
-				// 		id: 2,
-				// 		title: '阿甘锅贴',
-				// 		img: '../../static/阿甘锅贴.png',
-				// 		description: '生煎锅贴  |  孙河 孙河康营家园易事达购物中心'
-				// 	},
-				// 	{
-				// 		id: 3,
-				// 		title: '阿甘锅贴',
-				// 		img: '../../static/阿甘锅贴.png',
-				// 		description: '生煎锅贴  |  孙河 孙河康营家园易事达购物中心'
-				// 	},
-				// ]
 			};
 		},
 		methods: {

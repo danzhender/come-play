@@ -1,1 +1,56 @@
-/* pages/merchants/home.wxss */
+
+.contains.data-v-1e8373fe {
+
+	/* display: inline-flex; */
+}
+.icon-like.data-v-1e8373fe {
+
+	font-size: 30rpx;
+}
+.content.data-v-1e8373fe {
+	margin-top: 50rpx;
+	margin-left: 50rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	/* justify-content: center; */
+}
+.appraise.data-v-1e8373fe{
+	/* margin-left: 50rpx; */
+	margin-top: 30rpx;
+	width:550rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack:justify;
+	-webkit-justify-content:space-between;
+	    -ms-flex-pack:justify;
+	        justify-content:space-between;
+}
+.appraise-number.data-v-1e8373fe{
+	font-size: 30rpx;
+}
+.appraise-price.data-v-1e8373fe{
+	font-size: 30rpx;
+}
+.backgroundImg.data-v-1e8373fe {
+	/* justify-content: center; */
+	margin-left: 50rpx;
+	margin-top: 50rpx;
+	width: 650rpx;
+	height: 400rpx;
+	border-radius: 40rpx;
+}
+.title.data-v-1e8373fe {
+
+	font-size: 40rpx;
+	font-weight: bold;
+}
+

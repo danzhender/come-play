@@ -154,32 +154,7 @@ var _merchants = _interopRequireDefault(__webpack_require__(/*! ../../static/mer
 //
 //
 //
-var _default = { data: function data() {return { isCard: false, merchantsList: _merchants.default.data // merchantsList: [{
-      // 		id: 0,
-      // 		title: '阿甘锅贴',
-      // 		img: '../../static/阿甘锅贴.png',
-      // 		description: '生煎锅贴  |  孙河 孙河康营家园易事达购物中心'
-      // 	},
-      // 	{
-      // 		id: 1,
-      // 		title: '阿甘锅贴',
-      // 		img: '../../static/阿甘锅贴.png',
-      // 		description: '生煎锅贴  |  孙河 孙河康营家园易事达购物中心'
-      // 	},
-      // 	{
-      // 		id: 2,
-      // 		title: '阿甘锅贴',
-      // 		img: '../../static/阿甘锅贴.png',
-      // 		description: '生煎锅贴  |  孙河 孙河康营家园易事达购物中心'
-      // 	},
-      // 	{
-      // 		id: 3,
-      // 		title: '阿甘锅贴',
-      // 		img: '../../static/阿甘锅贴.png',
-      // 		description: '生煎锅贴  |  孙河 孙河康营家园易事达购物中心'
-      // 	},
-      // ]
-    };}, methods: { IsCard: function IsCard(e) {this.isCard = e.detail.value;}, merchantsDetail: function merchantsDetail(id) {uni.navigateTo({ url: "../merchants/home?id=".concat(id) });} } };exports.default = _default;
+var _default = { data: function data() {return { isCard: false, merchantsList: _merchants.default.data };}, methods: { IsCard: function IsCard(e) {this.isCard = e.detail.value;}, merchantsDetail: function merchantsDetail(id) {uni.navigateTo({ url: "../merchants/home?id=".concat(id) });} } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
