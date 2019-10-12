@@ -90,6 +90,15 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
+  if (!_vm._isMounted) {
+    _vm.e0 = function($event) {
+      _vm.collected = !_vm.collected
+    }
+
+    _vm.e1 = function($event) {
+      _vm.collected = !_vm.collected
+    }
+  }
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -149,7 +158,31 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 var _merchants = _interopRequireDefault(__webpack_require__(/*! ../../static/merchants.json */ 277));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
