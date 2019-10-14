@@ -5,13 +5,14 @@
 	},
 	"setting": {
 		"urlCheck": true,
-		"es6": true,
-		"newFeature": true
+		"es6": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.0",
 	"appid": "wx108a88a79c7fcb04",
 	"projectname": "come-playing",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

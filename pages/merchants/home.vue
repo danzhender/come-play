@@ -21,14 +21,28 @@
 					<text class="appraise-price">{{merchantsList.collected.price}}/人</text>
 				</view>
 				<view class="Separator"></view>
-				<button class="cu-btn block bg-green margin-tb-sm lg">
-					<text class="cuIcon-communityfill"></text>进入商家聊天室</button>
+<!-- 				<button class="cu-btn block bg-green margin-tb-sm lg">
+					<text class="cuIcon-communityfill"></text>
+					<text class="Icon-font">进入商家聊天室</text>
+				</button> -->
+				<chat-button :chantsid="chantsid"></chat-button>
 				<view class="Separator"></view>
-				<view>
-					<view class="cu-avatar radius margin-left">
+				<view class="Coupon-contains">
+					<view class="cu-avatar radius margin-left bg-orange">
 						<text>卷</text>
 					</view>
-					<text>代金券</text>
+					<text class="content-first">代金券</text>
+					<view class="Coupon">
+						<view class="Coupon-first">
+							<text>100元代金券</text>
+							<text>周一至周五|全场通用</text>
+							<text>¥95</text>
+						</view>
+						<view class="Coupon-second">
+							<view class="Coupon-Rush">抢购</view>
+							<text>半年售 654</text>
+						</view>
+					</view>
 				</view>
 			</view>
 
@@ -38,18 +52,23 @@
 
 <script>
 	import MerchantsList from "../../static/merchants.json"
+	import ChatButton from "../chat/chatButton"
 	export default {
 		data() {
 			return {
 				MerchantsList: MerchantsList.data,
 				merchantsList: {},
-				collected: 0
+				collected: 0,
+				chantsid:0
 
 			}
 		},
+		components:{
+			ChatButton,
+		},
 		onLoad: function(option) { //option为object类型，会序列化上个页面传递的参数
 			var id = option.id
-
+			this.chantsid=id
 			this.merchantsList = this.MerchantsList[id]
 			
 		}
@@ -115,9 +134,63 @@
 		position: absolute;
 		left:190rpx;
 	}
+	.Icon-font{
+		/* text-align: center; */
+		position: relative;
+		left: 40rpx;
+	}
+	.Coupon{
+		font-size: 30rpx;
+		width: 650rpx;
+		display: flex;
+		justify-content: space-between;
+		background-color:#FDE6D2;
+		border: 3rpx solid #DD514C;
+		margin-top: 30rpx;
+	}
+	.Coupon-contains{
+		margin:20rpx 0;
+		}
+	.Coupon-first{
+		display: flex;
+		flex-direction: column;
+		margin: 20rpx;
+	}
+	.Coupon-second{
+		display: flex;
+		flex-direction: column;
+		margin: 20rpx;
+	}
+	.Coupon-Rush{
+		font-size: 35rpx;
+		font-style: bold;
+		color: white;
+		text-align:center;
+		width: 120rpx;
+		height: 60rpx;
+		background-color: #F37B1D;
+		border: 2rpx solid #F37B1D;
+		border-radius: 20rpx;
+	}
+	.Coupon-first > text{
+		margin:5rpx;
+	}
+	.Coupon-second > text{
+		margin:10rpx;
+	}
+	.content-first{
+		font-size: 35rpx;
+		margin-left: 20rpx;
+		
+	}
 
 	button{
+		
+		width: 650rpx;
 		margin-top: 35rpx;
 	}
 	
+/* 	.Coupon-contains > text{
+		margin
+	} */
 </style>

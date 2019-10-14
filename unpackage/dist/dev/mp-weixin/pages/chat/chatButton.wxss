@@ -1,0 +1,13 @@
+
+.cuIcon-communityfill{
+	
+	font-size: 35rpx;
+	position: absolute;
+	left:190rpx;
+}
+.Icon-font{
+	/* text-align: center; */
+	position: relative;
+	left: 40rpx;
+}
+

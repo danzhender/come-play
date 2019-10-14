@@ -1,78 +1,151 @@
 
 .contains.data-v-1e8373fe {
 
-	/* display: inline-flex; */
+		/* display: inline-flex; */
 }
 .icon-like.data-v-1e8373fe {
-	font-size: 50rpx;
+		font-size: 50rpx;
 }
 .icon-status.data-v-1e8373fe{
-	margin-left: 20rpx;
-	font-size: 30rpx;
+		margin-left: 20rpx;
+		font-size: 30rpx;
 }
 .content.data-v-1e8373fe {
-	margin-top: 50rpx;
-	margin-left: 50rpx;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	/* justify-content: center; */
+		margin-top: 50rpx;
+		margin-left: 50rpx;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		/* justify-content: center; */
 }
 .appraise.data-v-1e8373fe{
-	/* margin-left: 50rpx; */
-	margin-top: 30rpx;
-	width:500rpx;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack:justify;
-	-webkit-justify-content:space-between;
-	    -ms-flex-pack:justify;
-	        justify-content:space-between;
-	-webkit-box-align: end;
-	-webkit-align-items: flex-end;
-	    -ms-flex-align: end;
-	        align-items: flex-end;
+		/* margin-left: 50rpx; */
+		margin-top: 30rpx;
+		width:500rpx;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack:justify;
+		-webkit-justify-content:space-between;
+		    -ms-flex-pack:justify;
+		        justify-content:space-between;
+		-webkit-box-align: end;
+		-webkit-align-items: flex-end;
+		    -ms-flex-align: end;
+		        align-items: flex-end;
 }
 .appraise-number.data-v-1e8373fe{
-	font-size: 30rpx;
+		font-size: 30rpx;
 }
 .appraise-price.data-v-1e8373fe{
-	font-size: 30rpx;
+		font-size: 30rpx;
 }
 .backgroundImg.data-v-1e8373fe {
-	/* justify-content: center; */
-	margin-left: 50rpx;
-	margin-top: 50rpx;
-	width: 650rpx;
-	height: 400rpx;
-	border-radius: 40rpx;
+		/* justify-content: center; */
+		margin-left: 50rpx;
+		margin-top: 50rpx;
+		width: 650rpx;
+		height: 400rpx;
+		border-radius: 40rpx;
 }
 .title.data-v-1e8373fe {
-	font-size: 40rpx;
-	font-weight: bold;
+		font-size: 40rpx;
+		font-weight: bold;
 }
 .Separator.data-v-1e8373fe{
-	margin-top: 35rpx;
-	background-color: #8799A3;
-	width: 100%;
-	height: 1px;
+		margin-top: 35rpx;
+		background-color: #8799A3;
+		width: 100%;
+		height: 1px;
 }
 .cuIcon-communityfill.data-v-1e8373fe{
-	
-	font-size: 35rpx;
-	position: absolute;
-	left:190rpx;
+		
+		font-size: 35rpx;
+		position: absolute;
+		left:190rpx;
+}
+.Icon-font.data-v-1e8373fe{
+		/* text-align: center; */
+		position: relative;
+		left: 40rpx;
+}
+.Coupon.data-v-1e8373fe{
+		font-size: 30rpx;
+		width: 650rpx;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		background-color:#FDE6D2;
+		border: 3rpx solid #DD514C;
+		margin-top: 30rpx;
+}
+.Coupon-contains.data-v-1e8373fe{
+		margin:20rpx 0;
+}
+.Coupon-first.data-v-1e8373fe{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		margin: 20rpx;
+}
+.Coupon-second.data-v-1e8373fe{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		margin: 20rpx;
+}
+.Coupon-Rush.data-v-1e8373fe{
+		font-size: 35rpx;
+		font-style: bold;
+		color: white;
+		text-align:center;
+		width: 120rpx;
+		height: 60rpx;
+		background-color: #F37B1D;
+		border: 2rpx solid #F37B1D;
+		border-radius: 20rpx;
+}
+.Coupon-first > text.data-v-1e8373fe{
+		margin:5rpx;
+}
+.Coupon-second > text.data-v-1e8373fe{
+		margin:10rpx;
+}
+.content-first.data-v-1e8373fe{
+		font-size: 35rpx;
+		margin-left: 20rpx;
 }
 button.data-v-1e8373fe{
-	margin-top: 35rpx;
+		
+		width: 650rpx;
+		margin-top: 35rpx;
 }
 
+	/* 	.Coupon-contains > text{
+		margin
+	} */
 

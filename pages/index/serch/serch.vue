@@ -6,7 +6,7 @@
 			<input @focus="InputFocus"  :adjust-position="false" type="text" placeholder="点击搜索所有商家" confirm-type="search"></input>
 		</view>
 		<view class="action">
-			<text>广州</text>
+			<text>北京</text>
 			<text class="cuIcon-triangledownfill"></text>
 		</view>
 	</view>

@@ -1,0 +1,1 @@
+<view><button data-event-opts="{{[['tap',[['chatRouter',['$0'],['chantsid']]]]]}}" class="cu-btn block bg-green margin-tb-sm lg" bindtap="__e"><text class="cuIcon-communityfill"></text><text class="Icon-font">进入商家聊天室</text></button></view>

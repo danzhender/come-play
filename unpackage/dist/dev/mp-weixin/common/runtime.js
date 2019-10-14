@@ -104,11 +104,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"pages/basics/home":1,"pages/component/home":1,"pages/plugin/home":1,"pages/index/merchantsUsers":1,"pages/index/swiper":1};
+/******/ 		var cssChunks = {"pages/basics/home":1,"pages/component/home":1,"pages/plugin/home":1,"pages/index/merchantsUsers":1,"pages/index/swiper":1,"pages/chat/chatButton":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"colorui/components/cu-custom":"colorui/components/cu-custom","pages/basics/home":"pages/basics/home","pages/component/home":"pages/component/home","pages/plugin/home":"pages/plugin/home","pages/index/merchantsUsers":"pages/index/merchantsUsers","pages/index/swiper":"pages/index/swiper"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"colorui/components/cu-custom":"colorui/components/cu-custom","pages/basics/home":"pages/basics/home","pages/component/home":"pages/component/home","pages/plugin/home":"pages/plugin/home","pages/index/merchantsUsers":"pages/index/merchantsUsers","pages/index/swiper":"pages/index/swiper","pages/chat/chatButton":"pages/chat/chatButton"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
