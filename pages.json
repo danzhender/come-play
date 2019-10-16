@@ -112,6 +112,18 @@
 		{
 		    "path" : "pages/merchants/home",
 		    "style" : {}
+		},
+		{
+		    "path" : "pages/chat/home",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/post/home",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/my/home",
+		    "style" : {}
 		}
     ],
 	"globalStyle": {

@@ -28,7 +28,10 @@
     "pages/plugin/verticalnav",
     "pages/index/serch/serch",
     "pages/index/serch/SerchDetail",
-    "pages/merchants/home"
+    "pages/merchants/home",
+    "pages/chat/home",
+    "pages/post/home",
+    "pages/my/home"
   ],
   "subPackages": [],
   "window": {
@@ -42,7 +45,8 @@
     "basics": "/pages/basics/home",
     "components": "/pages/component/home",
     "plugin": "/pages/plugin/home",
+    "my": "/pages/my/home",
+    "post": "/pages/post/home",
     "cu-custom": "/colorui/components/cu-custom"
-  },
-  "sitemapLocation": "sitemap14.json"
+  }
 }

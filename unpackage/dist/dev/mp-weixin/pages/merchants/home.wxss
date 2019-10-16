@@ -139,6 +139,12 @@
 		font-size: 35rpx;
 		margin-left: 20rpx;
 }
+
+	/* 	.tabbar-comment{
+		position: fixed;
+		bottom: 0;
+		left: 50rpx;
+	} */
 button.data-v-1e8373fe{
 		
 		width: 650rpx;

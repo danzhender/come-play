@@ -10,10 +10,10 @@
 					<image :src=item.img />
 					<view class="desc">
 						<view class="text-content">{{item.description}}</view>
-						<view>
+<!-- 						<view>
 							<view class="cu-tag bg-red light sm round">美味</view>
 							<view class="cu-tag bg-green light sm round">环境好</view>
-						</view>
+						</view> -->
 					</view>
 				</view>
 			</view>

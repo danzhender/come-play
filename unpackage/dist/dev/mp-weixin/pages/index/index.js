@@ -178,6 +178,12 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+
+
+
+
+
 var _serch = _interopRequireDefault(__webpack_require__(/*! ./serch/serch */ 21));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var Swiper = function Swiper() {return __webpack_require__.e(/*! import() | pages/index/swiper */ "pages/index/swiper").then(__webpack_require__.bind(null, /*! ./swiper */ 250));};var MerchantsUsers = function MerchantsUsers() {return Promise.all(/*! import() | pages/index/merchantsUsers */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/index/merchantsUsers")]).then(__webpack_require__.bind(null, /*! ./merchantsUsers */ 257));};var _default =
 
 {
@@ -194,6 +200,7 @@ var _serch = _interopRequireDefault(__webpack_require__(/*! ./serch/serch */ 21)
   methods: {
     NavChange: function NavChange(e) {
       this.PageCur = e.currentTarget.dataset.cur;
+      console.log(this.PageCur);
     } } };exports.default = _default;
 
 /***/ }),

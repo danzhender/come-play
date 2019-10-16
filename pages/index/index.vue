@@ -13,6 +13,8 @@
 		<basics v-if="PageCur=='basics'"></basics>
 		<components v-if="PageCur=='component'"></components>
 		<plugin v-if="PageCur=='plugin'"></plugin>
+		<post v-if="PageCur=='post'"></post>
+		<my v-if="PageCur=='my'"></my>
 		<view class="cu-tabbar-height"></view>
 		<view class="cu-bar tabbar bg-white shadow foot">
 			<view class="action" @click="NavChange" data-cur="basics">
@@ -27,6 +29,10 @@
 				</view>
 				<view :class="PageCur=='component'?'text-green':'text-gray'">组件</view>
 			</view>
+			<view class="action text-gray add-action" @click="NavChange" data-cur="post">
+				<button class="cu-btn cuIcon-add bg-green shadow"></button>
+				发帖
+			</view>
 			<view class="action" @click="NavChange" data-cur="plugin">
 				<view class='cuIcon-cu-image'>
 					<image :src="'/static/tabbar/plugin' + [PageCur == 'plugin'?'_cur':''] + '.png'"></image>
@@ -37,7 +43,7 @@
 				<view class='cuIcon-cu-image'>
 					<image src="/static/tabbar/about.png"></image>
 				</view>
-				<view :class="PageCur=='basics'?'text-green':'text-gray'">我的</view>
+				<view :class="PageCur=='my'?'text-green':'text-gray'">我的</view>
 			</view>
 		</view>
 	</view>
@@ -61,6 +67,7 @@
 		methods: {
 			NavChange: function(e) {
 				this.PageCur = e.currentTarget.dataset.cur
+				console.log(this.PageCur)
 			}
 		}
 	}
