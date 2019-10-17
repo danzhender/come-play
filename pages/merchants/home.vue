@@ -8,7 +8,7 @@
 			<img class="backgroundImg" :src=merchantsList.backgroundImg alt="网络故障" />
 			<view class="content">
 				<P class="title">{{merchantsList.title}}</P>
-				<view class="appraise" >
+				<view class="appraise">
 					<view v-if="collected">
 						<text class="icon-like cuIcon-likefill" @click="collected=!collected"></text>
 						<text class="icon-status">已收藏</text>
@@ -21,10 +21,6 @@
 					<text class="appraise-price">{{merchantsList.collected.price}}/人</text>
 				</view>
 				<view class="Separator"></view>
-<!-- 				<button class="cu-btn block bg-green margin-tb-sm lg">
-					<text class="cuIcon-communityfill"></text>
-					<text class="Icon-font">进入商家聊天室</text>
-				</button> -->
 				<chat-button :chantsid="chantsid"></chat-button>
 				<view class="Separator"></view>
 				<view class="Coupon-contains">
@@ -45,36 +41,35 @@
 					</view>
 				</view>
 			</view>
-
-		</view>
-		<view class="cu-bar tabbar bg-white tabbar-comment">
-			<view class="action">
-				<view class="cuIcon-cu-image">
-					<image src="/static/tabbar/basics_cur.png"></image>
-				</view>
-				<view class="text-green">元素</view>
 			</view>
-			<view class="action">
-				<view class="cuIcon-cu-image">
-					<image src="/static/tabbar/component.png"></image>
+			<view class="cu-tabbar-height"></view>
+			<view class="cu-bar tabbar bg-white shadow foot">
+				<view class="action" @click="NavChange('./')" >
+					<view class='cuIcon-cu-image'>
+						<image :src="'/static/tabbar/basics' + [PageCur=='basics'?'_cur':''] + '.png'"></image>
+					</view>
+					<view :class="PageCur=='basics'?'text-green':'text-gray'">元素</view>
 				</view>
-				<view class="text-gray">组件</view>
-			</view>
-			<view class="action">
-				<view class="cuIcon-cu-image">
-					<image src="/static/tabbar/plugin.png"></image>
-					<view class="cu-tag badge">99</view>
+				<view class="action" @click="NavChange" >
+					<view class='cuIcon-cu-image'>
+						<image :src="'/static/tabbar/component' + [PageCur == 'component'?'_cur':''] + '.png'"></image>
+					</view>
+					<view :class="PageCur=='component'?'text-green':'text-gray'">组件</view>
 				</view>
-				<view class="text-gray">扩展</view>
-			</view>
-			<view class="action">
-				<view class="cuIcon-cu-image">
-					<image src="/static/tabbar/about.png"></image>
-					<view class="cu-tag badge"></view>
+				<view class="action" @click="NavChange" >
+					<view class='cuIcon-cu-image'>
+						<image :src="'/static/tabbar/plugin' + [PageCur == 'plugin'?'_cur':''] + '.png'"></image>
+					</view>
+					<view :class="PageCur=='plugin'?'text-green':'text-gray'">扩展</view>
 				</view>
-				<view class="text-gray">关于</view>
+				<view class="action" @click="NavChange" >
+					<view class='cuIcon-cu-image'>
+						<image src="/static/tabbar/about.png"></image>
+					</view>
+					<view :class="PageCur=='my'?'text-green':'text-gray'">我的</view>
+				</view>
 			</view>
-		</view>
+		
 	</view>
 </template>
 
@@ -87,18 +82,27 @@
 				MerchantsList: MerchantsList.data,
 				merchantsList: {},
 				collected: 0,
-				chantsid:0
+				chantsid: 0
 
 			}
 		},
-		components:{
+		methods:{
+			NavChange: function(url) {
+				
+				console.log(url)
+				uni.navigateTo({
+					url:url
+				})
+			}
+		},
+		components: {
 			ChatButton,
 		},
 		onLoad: function(option) { //option为object类型，会序列化上个页面传递的参数
 			var id = option.id
-			this.chantsid=id
+			this.chantsid = id
 			this.merchantsList = this.MerchantsList[id]
-			
+
 		}
 	}
 </script>
@@ -112,10 +116,12 @@
 	.icon-like {
 		font-size: 50rpx;
 	}
-	.icon-status{
+
+	.icon-status {
 		margin-left: 20rpx;
 		font-size: 30rpx;
 	}
+
 	.content {
 		margin-top: 50rpx;
 		margin-left: 50rpx;
@@ -123,20 +129,24 @@
 		flex-direction: column;
 		/* justify-content: center; */
 	}
-	.appraise{
+
+	.appraise {
 		/* margin-left: 50rpx; */
 		margin-top: 30rpx;
-		width:500rpx;
+		width: 500rpx;
 		display: flex;
-		justify-content:space-between;
+		justify-content: space-between;
 		align-items: flex-end;
 	}
-	.appraise-number{
+
+	.appraise-number {
 		font-size: 30rpx;
 	}
-	.appraise-price{
+
+	.appraise-price {
 		font-size: 30rpx;
 	}
+
 	.backgroundImg {
 		/* justify-content: center; */
 		margin-left: 50rpx;
@@ -150,79 +160,87 @@
 		font-size: 40rpx;
 		font-weight: bold;
 	}
-	.Separator{
-		margin-top: 35rpx;
+
+	.Separator {
+		/* margin-top: 35rpx; */
+		margin: 20rpx 0;
 		background-color: #8799A3;
 		width: 100%;
 		height: 1px;
 	}
-	.cuIcon-communityfill{
-		
+
+	.cuIcon-communityfill {
+
 		font-size: 35rpx;
 		position: absolute;
-		left:190rpx;
+		left: 190rpx;
 	}
-	.Icon-font{
+
+	.Icon-font {
 		/* text-align: center; */
 		position: relative;
 		left: 40rpx;
 	}
-	.Coupon{
+
+	.Coupon {
 		font-size: 30rpx;
 		width: 650rpx;
 		display: flex;
 		justify-content: space-between;
-		background-color:#FDE6D2;
+		background-color: #FDE6D2;
 		border: 3rpx solid #DD514C;
 		margin-top: 30rpx;
 	}
-	.Coupon-contains{
-		margin:20rpx 0;
-		}
-	.Coupon-first{
+
+	.Coupon-contains {
+		margin: 20rpx 0;
+	}
+
+	.Coupon-first {
 		display: flex;
 		flex-direction: column;
 		margin: 20rpx;
 	}
-	.Coupon-second{
+
+	.Coupon-second {
 		display: flex;
 		flex-direction: column;
 		margin: 20rpx;
 	}
-	.Coupon-Rush{
+
+	.Coupon-Rush {
 		font-size: 35rpx;
 		font-style: bold;
 		color: white;
-		text-align:center;
+		text-align: center;
 		width: 120rpx;
 		height: 60rpx;
 		background-color: #F37B1D;
 		border: 2rpx solid #F37B1D;
 		border-radius: 20rpx;
 	}
-	.Coupon-first > text{
-		margin:5rpx;
+
+	.Coupon-first>text {
+		margin: 5rpx;
 	}
-	.Coupon-second > text{
-		margin:10rpx;
+
+	.Coupon-second>text {
+		margin: 10rpx;
 	}
-	.content-first{
+
+	.content-first {
 		font-size: 35rpx;
 		margin-left: 20rpx;
-		
+
 	}
-/* 	.tabbar-comment{
-		position: fixed;
-		bottom: 0;
-		left: 50rpx;
-	} */
-	button{
-		
+
+	button {
+
 		width: 650rpx;
 		margin-top: 35rpx;
 	}
-	
-/* 	.Coupon-contains > text{
+
+	/* 	.Coupon-contains > text{
 		margin
 	} */
 </style>

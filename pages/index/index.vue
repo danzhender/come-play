@@ -29,10 +29,6 @@
 				</view>
 				<view :class="PageCur=='component'?'text-green':'text-gray'">组件</view>
 			</view>
-			<view class="action text-gray add-action" @click="NavChange" data-cur="post">
-				<button class="cu-btn cuIcon-add bg-green shadow"></button>
-				发帖
-			</view>
 			<view class="action" @click="NavChange" data-cur="plugin">
 				<view class='cuIcon-cu-image'>
 					<image :src="'/static/tabbar/plugin' + [PageCur == 'plugin'?'_cur':''] + '.png'"></image>
