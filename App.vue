@@ -1,4 +1,5 @@
 <script>
+	import MerchantsList from "./static/merchants.json"
 	import Vue from 'vue'
 	export default {
 		onLaunch: function() {

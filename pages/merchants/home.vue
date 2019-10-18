@@ -44,32 +44,31 @@
 			</view>
 			<view class="cu-tabbar-height"></view>
 			<view class="cu-bar tabbar bg-white shadow foot">
-				<view class="action" @click="NavChange('./')" >
+				<view class="action" @click="NavChange('./commentOn')" >
 					<view class='cuIcon-cu-image'>
 						<image :src="'/static/tabbar/basics' + [PageCur=='basics'?'_cur':''] + '.png'"></image>
 					</view>
-					<view :class="PageCur=='basics'?'text-green':'text-gray'">元素</view>
+					<view :class="PageCur=='basics'?'text-green':'text-gray'">写点评</view>
 				</view>
 				<view class="action" @click="NavChange" >
 					<view class='cuIcon-cu-image'>
 						<image :src="'/static/tabbar/component' + [PageCur == 'component'?'_cur':''] + '.png'"></image>
 					</view>
-					<view :class="PageCur=='component'?'text-green':'text-gray'">组件</view>
+					<view :class="PageCur=='component'?'text-green':'text-gray'">收藏</view>
 				</view>
 				<view class="action" @click="NavChange" >
 					<view class='cuIcon-cu-image'>
 						<image :src="'/static/tabbar/plugin' + [PageCur == 'plugin'?'_cur':''] + '.png'"></image>
 					</view>
-					<view :class="PageCur=='plugin'?'text-green':'text-gray'">扩展</view>
+					<view :class="PageCur=='plugin'?'text-green':'text-gray'">分享</view>
 				</view>
 				<view class="action" @click="NavChange" >
 					<view class='cuIcon-cu-image'>
 						<image src="/static/tabbar/about.png"></image>
 					</view>
-					<view :class="PageCur=='my'?'text-green':'text-gray'">我的</view>
+					<view :class="PageCur=='my'?'text-green':'text-gray'">打卡</view>
 				</view>
 			</view>
-		
 	</view>
 </template>
 
@@ -83,15 +82,15 @@
 				merchantsList: {},
 				collected: 0,
 				chantsid: 0
-
 			}
 		},
 		methods:{
 			NavChange: function(url) {
 				
-				console.log(url)
+				
 				uni.navigateTo({
-					url:url
+					url:`${url}?id=${this.chantsid}`
+					// url:`./commentOn?id=${this.chantsid}`
 				})
 			}
 		},
@@ -102,7 +101,6 @@
 			var id = option.id
 			this.chantsid = id
 			this.merchantsList = this.MerchantsList[id]
-
 		}
 	}
 </script>

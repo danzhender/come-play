@@ -124,7 +124,12 @@
 		{
 		    "path" : "pages/my/home",
 		    "style" : {}
+		},
+		{
+		    "path" : "pages/merchants/commentOn",
+		    "style" : {}
 		}
+		
     ],
 	"globalStyle": {
 		"mp-alipay": {

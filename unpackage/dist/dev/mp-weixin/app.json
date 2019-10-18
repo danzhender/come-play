@@ -31,7 +31,8 @@
     "pages/merchants/home",
     "pages/chat/home",
     "pages/post/home",
-    "pages/my/home"
+    "pages/my/home",
+    "pages/merchants/commentOn"
   ],
   "subPackages": [],
   "window": {
