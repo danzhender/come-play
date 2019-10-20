@@ -23,25 +23,29 @@
 </template>
 
 <script>
-	import MerchantsList from "../../static/merchants.json"
+	// import MerchantsList from "/static/merchants.js"
+	var MerchantsList =require('../../static/merchants.js')
 	export default {
 		data() {
 			return {
 				isCard: false,
-				merchantsList:MerchantsList.data
+				merchantsList:MerchantsList.MerchantsList
 			};
 		},
 		methods: {
-			IsCard(e) {
-				this.isCard = e.detail.value
-			},
+			// IsCard(e) {
+			// 	this.isCard = e.detail.value
+				
+			// },
 			merchantsDetail(id){
-		
+				 console.log(this.merchantsList)
 				uni.navigateTo({
 					url:`../merchants/home?id=${id}`
 				})
 			}
-		}
+		},
+
+		
 	}
 </script>
 

@@ -131,82 +131,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var _merchants = _interopRequireDefault(__webpack_require__(/*! ../../static/merchants.json */ 12));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
 //
 //
 //
@@ -280,9 +205,36 @@ var _merchants = _interopRequireDefault(__webpack_require__(/*! ../../static/mer
 //
 //
 //
-var ChatButton = function ChatButton() {return __webpack_require__.e(/*! import() | pages/chat/chatButton */ "pages/chat/chatButton").then(__webpack_require__.bind(null, /*! ../chat/chatButton */ 292));};var _default = { data: function data() {return { MerchantsList: _merchants.default.data, merchantsList: {}, collected: 0, chantsid: 0 };}, methods: { NavChange: function NavChange(url) {uni.navigateTo({ url: "".concat(url, "?id=").concat(this.chantsid) // url:`./commentOn?id=${this.chantsid}`
-      });} }, components: { ChatButton: ChatButton }, onLoad: function onLoad(option) {//option为object类型，会序列化上个页面传递的参数
-    var id = option.id;this.chantsid = id;this.merchantsList = this.MerchantsList[id];} };exports.default = _default;
+
+var MerchantsList = __webpack_require__(/*! ../../static/merchants.js */ 290);var ChatButton = function ChatButton() {return __webpack_require__.e(/*! import() | pages/chat/chatButton */ "pages/chat/chatButton").then(__webpack_require__.bind(null, /*! ../chat/chatButton */ 293));};var _default =
+
+{
+  data: function data() {
+    return {
+      MerchantsList: MerchantsList.MerchantsList,
+      merchantsList: {},
+      collected: 0,
+      chantsid: 0 };
+
+  },
+  methods: {
+    NavChange: function NavChange(url) {
+
+
+      uni.navigateTo({
+        url: "".concat(url, "?id=").concat(this.chantsid)
+        // url:`./commentOn?id=${this.chantsid}`
+      });
+    } },
+
+  components: {
+    ChatButton: ChatButton },
+
+  onLoad: function onLoad(option) {//option为object类型，会序列化上个页面传递的参数
+    var id = option.id;
+    this.chantsid = id;
+    this.merchantsList = this.MerchantsList[id];
+  } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

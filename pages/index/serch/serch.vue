@@ -1,6 +1,6 @@
 <template>
 	<view class="cu-bar search bg-white">
-		<view class="cu-avatar round" style="background-image:url(../../static/timg.jpg)"></view>
+		<view class="cu-avatar round" style="background-image:url(/static/tim.jpg)"></view>
 		<view class="search-form round">
 			<text class="cuIcon-search"></text>
 			<input @focus="InputFocus"  :adjust-position="false" type="text" placeholder="点击搜索所有商家" confirm-type="search"></input>
@@ -25,12 +25,7 @@
 
 				uni.navigateTo({
 				    url: './serch/SerchDetail',
-					success	: function(){
-						console.log(123)
-					},
-					fail	: function(){
-						console.log(321)
-					}
+
 				})
 			}
 

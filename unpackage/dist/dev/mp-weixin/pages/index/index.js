@@ -165,6 +165,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
 var _serch = _interopRequireDefault(__webpack_require__(/*! ./serch/serch */ 32));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var Swiper = function Swiper() {return __webpack_require__.e(/*! import() | pages/index/swiper */ "pages/index/swiper").then(__webpack_require__.bind(null, /*! ./swiper */ 278));};var MerchantsUsers = function MerchantsUsers() {return Promise.all(/*! import() | pages/index/merchantsUsers */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/index/merchantsUsers")]).then(__webpack_require__.bind(null, /*! ./merchantsUsers */ 285));};var _default =
 
 {
@@ -312,13 +313,8 @@ var _default =
     InputFocus: function InputFocus(e) {
 
       uni.navigateTo({
-        url: './serch/SerchDetail',
-        success: function success() {
-          console.log(123);
-        },
-        fail: function fail() {
-          console.log(321);
-        } });
+        url: './serch/SerchDetail' });
+
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

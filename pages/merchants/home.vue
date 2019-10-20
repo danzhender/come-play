@@ -5,7 +5,7 @@
 			<block slot="content">商家详情</block>
 		</cu-custom>
 		<view class="contains">
-			<img class="backgroundImg" :src=merchantsList.backgroundImg alt="网络故障" />
+			<image class="backgroundImg" :src=merchantsList.backgroundImg alt="网络故障" />
 			<view class="content">
 				<P class="title">{{merchantsList.title}}</P>
 				<view class="appraise">
@@ -73,12 +73,12 @@
 </template>
 
 <script>
-	import MerchantsList from "../../static/merchants.json"
+	var MerchantsList =require('../../static/merchants.js')
 	import ChatButton from "../chat/chatButton"
 	export default {
 		data() {
 			return {
-				MerchantsList: MerchantsList.data,
+				MerchantsList: MerchantsList.MerchantsList,
 				merchantsList: {},
 				collected: 0,
 				chantsid: 0

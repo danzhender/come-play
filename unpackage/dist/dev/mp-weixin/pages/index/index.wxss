@@ -8,13 +8,13 @@
 
 
 .page {
-	height: 30vh;
+		height: 30vh;
 }
-.swiper-contains{
-	position: relative;
-	top:-30rpx;
-}
-.blank{
-	height: 20rpx;
-}
+/* 	.swiper-contains{
+		position: relative;
+		top:-30rpx;
+	} */
+/* 	.blank{
+		height: 20rpx;
+	} */
 

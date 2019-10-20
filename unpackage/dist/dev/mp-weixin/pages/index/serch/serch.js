@@ -148,13 +148,8 @@ var _default =
     InputFocus: function InputFocus(e) {
 
       uni.navigateTo({
-        url: './serch/SerchDetail',
-        success: function success() {
-          console.log(123);
-        },
-        fail: function fail() {
-          console.log(321);
-        } });
+        url: './serch/SerchDetail' });
+
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
