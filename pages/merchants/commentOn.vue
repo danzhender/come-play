@@ -15,7 +15,7 @@
 
 	<view class="cu-form-group margin-top">
 		<textarea maxlength="-1" :disabled="modalName!=null" @input="textareaAInput" 
-		placeholder="亲,请分享口味,环境服务,食材等方面的体验"></textarea>
+		placeholder="亲,请分享口味,环境服务,食材等方面的体验" v-model="feedback.content"></textarea>
 	</view>
 	<!-- 照片上传模块 -->
 	<view class="cu-bar bg-white margin-top">
@@ -41,7 +41,7 @@
 	</view>
 	<view class="cu-form-group margin-top">
 		<view class="title">人均</view>
-		<input placeholder="¥ 请输入消费金额" name="input"></input>
+		<input placeholder="¥ 请输入消费金额" name="input" v-model="feedback.price"></input>
 	</view>
 	<view class="cu-form-group margin-top">
 		<view class="title">匿名点评</view>
@@ -77,6 +77,12 @@
 					value: 'C',
 					checked: false
 				}],
+				feedback:{
+					content:'',
+					img:this.imgList,
+					price:''
+					
+				},
 			}
 		},
 		methods:{
@@ -116,8 +122,12 @@
 			SetShadow(e) {
 				this.shadow = e.detail.value
 			},
+			textareaAInput(e) {
+				console.log(this.feedback.content) 
+			},
 		},
 		onLoad: function(option) { //option为object类型，会序列化上个页面传递的参数
+		console.log()
 			this.chantsid=option.id
 			this.merchantsList=MerchantsList.data[this.chantsid]
 		

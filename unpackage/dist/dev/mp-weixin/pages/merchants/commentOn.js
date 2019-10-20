@@ -243,11 +243,19 @@ var _merchants = _interopRequireDefault(__webpack_require__(/*! ../../static/mer
 //
 //
 //
-var _default = { data: function data() {return { chantsid: 0, merchantsList: {}, imgList: [], shadow: false, checkbox: [{ value: 'A', checked: true }, { value: 'B', checked: true }, { value: 'C', checked: false }] };}, methods: { ChooseImage: function ChooseImage() {var _this = this;uni.chooseImage({ count: 9, //默认9
+var _default = { data: function data() {return { chantsid: 0, merchantsList: {}, imgList: [], shadow: false, checkbox: [{ value: 'A', checked: true }, { value: 'B', checked: true }, { value: 'C', checked: false }], feedback: { content: '', img: this.imgList, price: '' } };}, methods: { ChooseImage: function ChooseImage() {var _this = this;uni.chooseImage({ count: 9, //默认9
         sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
         sourceType: ['album'], //从相册选择
-        success: function success(res) {if (_this.imgList.length != 0) {_this.imgList = _this.imgList.concat(res.tempFilePaths);} else {_this.imgList = res.tempFilePaths;}} });}, ViewImage: function ViewImage(e) {uni.previewImage({ urls: this.imgList, current: e.currentTarget.dataset.url });}, DelImg: function DelImg(e) {var _this2 = this;uni.showModal({ title: '亲爱的顾客', content: '确定要删除这段回忆吗？', cancelText: '再看看', confirmText: '再见', success: function success(res) {if (res.confirm) {_this2.imgList.splice(e.currentTarget.dataset.index, 1);}} });}, SetShadow: function SetShadow(e) {this.shadow = e.detail.value;} }, onLoad: function onLoad(option) {//option为object类型，会序列化上个页面传递的参数
-    this.chantsid = option.id;this.merchantsList = _merchants.default.data[this.chantsid];} };exports.default = _default;
+        success: function success(res) {if (_this.imgList.length != 0) {_this.imgList = _this.imgList.concat(res.tempFilePaths);} else {_this.imgList = res.tempFilePaths;}} });}, ViewImage: function ViewImage(e) {uni.previewImage({ urls: this.imgList, current: e.currentTarget.dataset.url });}, DelImg: function DelImg(e) {var _this2 = this;uni.showModal({ title: '亲爱的顾客', content: '确定要删除这段回忆吗？', cancelText: '再看看', confirmText: '再见', success: function success(res) {if (res.confirm) {_this2.imgList.splice(e.currentTarget.dataset.index, 1);}} });}, SetShadow: function SetShadow(e) {this.shadow = e.detail.value;}, textareaAInput: function textareaAInput(e) {
+      console.log(this.feedback.content);
+    } },
+
+  onLoad: function onLoad(option) {//option为object类型，会序列化上个页面传递的参数
+    console.log();
+    this.chantsid = option.id;
+    this.merchantsList = _merchants.default.data[this.chantsid];
+
+  } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
