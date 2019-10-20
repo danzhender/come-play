@@ -4,7 +4,15 @@
 		<block slot="backText">返回</block>
 		<block slot="content">写点评</block>
 	</cu-custom>
+
 	<view class="merchantTile">{{merchantsList.title}}</view>
+	
+<!-- 	<view class="grid col-5 padding-sm submit-button" >
+		<view class="margin-tb-sm text-center">
+			<button class="cu-btn round" :class="['bg-' + 'orange' , shadow?'shadow':'']">提交</button>
+		</view>
+	-->
+
 	<view class="cu-form-group margin-top">
 		<textarea maxlength="-1" :disabled="modalName!=null" @input="textareaAInput" 
 		placeholder="亲,请分享口味,环境服务,食材等方面的体验"></textarea>
@@ -15,18 +23,18 @@
 			图片上传
 		</view>
 		<view class="action">
-			{{imgList.length}}/4
+			{{imgList.length}}/9
 		</view>
 	</view>
 	<view class="cu-form-group">
-		<view class="grid col-4 grid-square flex-sub">
+		<view class="grid col-3 grid-square flex-sub">
 			<view class="bg-img" v-for="(item,index) in imgList" :key="index" @tap="ViewImage" :data-url="imgList[index]">
 			 <image :src="imgList[index]" mode="aspectFill"></image>
 				<view class="cu-tag bg-red" @tap.stop="DelImg" :data-index="index">
 					<text class='cuIcon-close'></text>
 				</view>
 			</view>
-			<view class="solids" @tap="ChooseImage" v-if="imgList.length<4">
+			<view class="solids" @tap="ChooseImage" v-if="imgList.length<9">
 				<text class='cuIcon-cameraadd'></text>
 			</view>
 		</view>
@@ -42,6 +50,10 @@
 	<view class="anonymous">
 		选择匿名点评后,商家将无法获取你的个人信息,同时你的点评也将不再对粉丝展示
 	</view>
+	<view class="padding flex flex-direction">
+		
+		<button class="cu-btn bg-orange margin-tb-sm lg">提交</button>
+	</view>
 	</view>
 	
 </template>
@@ -54,6 +66,7 @@
 				chantsid:0,
 				merchantsList:{},
 				imgList: [],
+				shadow: false,
 				checkbox: [{
 					value: 'A',
 					checked: true
@@ -100,6 +113,9 @@
 					}
 				})
 			},
+			SetShadow(e) {
+				this.shadow = e.detail.value
+			},
 		},
 		onLoad: function(option) { //option为object类型，会序列化上个页面传递的参数
 			this.chantsid=option.id
@@ -111,17 +127,28 @@
 </script>
 	
 <style scoped>
+
 	.merchantTile{
+		/* display: inline-block; */
+
 		font-size: 40rpx;
 		margin: 30rpx;
 	}
 	.anonymous{
 		margin: 20rpx;
 	}
+	.submit-button{
+		/* position: relative; */
+/* 		margin-left: 600rpx;
+		margin-top: -130rpx;
+		width: 200rpx; */
+		}
 	textarea{
 		font-size: 35rpx;
 		height:500rpx;
 		line-height: 30rpx;
+		
+		
 		}
 	
 </style>
