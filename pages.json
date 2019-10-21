@@ -128,6 +128,14 @@
 		{
 		    "path" : "pages/merchants/commentOn",
 		    "style" : {}
+		},
+		{
+		    "path" : "pages/merchants/commentCard",
+		    "style" : {}
+		},
+		{
+		    "path" : "pages/merchants/commentDetail",
+		    "style" : {}
 		}
 		
     ],
@@ -154,3 +162,4 @@
 	}
 
 }
+

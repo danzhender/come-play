@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "chat-button": "/pages/chat/chatButton"
+    "chat-button": "/pages/chat/chatButton",
+    "comment-card": "/pages/merchants/commentCard"
   }
 }

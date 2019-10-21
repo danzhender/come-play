@@ -32,7 +32,9 @@
     "pages/chat/home",
     "pages/post/home",
     "pages/my/home",
-    "pages/merchants/commentOn"
+    "pages/merchants/commentOn",
+    "pages/merchants/commentCard",
+    "pages/merchants/commentDetail"
   ],
   "subPackages": [],
   "window": {
@@ -49,6 +51,5 @@
     "my": "/pages/my/home",
     "post": "/pages/post/home",
     "cu-custom": "/colorui/components/cu-custom"
-  },
-  "sitemapLocation": "sitemap0.json"
+  }
 }

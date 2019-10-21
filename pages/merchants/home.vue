@@ -42,46 +42,56 @@
 				</view>
 			</view>
 			</view>
+			<comment-card></comment-card>
 			<view class="cu-tabbar-height"></view>
 			<view class="cu-bar tabbar bg-white shadow foot">
-				<view class="action" @click="NavChange('./commentOn')" >
-					<view class='cuIcon-cu-image'>
-						<image :src="'/static/tabbar/basics' + [PageCur=='basics'?'_cur':''] + '.png'"></image>
-					</view>
-					<view :class="PageCur=='basics'?'text-green':'text-gray'">写点评</view>
+				<view class="action" @tap="NavChange('./commentOn')" >
+				<view class="cu-item" >
+					<text class="lg text-gray cuIcon-comment"></text>
+					<text>评论</text>
 				</view>
-				<view class="action" @click="NavChange" >
-					<view class='cuIcon-cu-image'>
-						<image :src="'/static/tabbar/component' + [PageCur == 'component'?'_cur':''] + '.png'"></image>
-					</view>
-					<view :class="PageCur=='component'?'text-green':'text-gray'">收藏</view>
 				</view>
-				<view class="action" @click="NavChange" >
+				<view class="action" @tap="collectChange" v-if="collectStatus">
+				<view class="cu-item" >
+					<text class="lg text-gray cuIcon-favor"></text>
+					<text>收藏</text>
+				</view>
+				</view>
+				<view class="action" @tap="collectChange" v-else>
+				<view class="cu-item" >
+					<text class="lg text-gray cuIcon-favorfill"></text>
+					<text>收藏</text>
+				</view>
+				</view>
+				<view class="action"  >
 					<view class='cuIcon-cu-image'>
 						<image :src="'/static/tabbar/plugin' + [PageCur == 'plugin'?'_cur':''] + '.png'"></image>
 					</view>
-					<view :class="PageCur=='plugin'?'text-green':'text-gray'">分享</view>
+					<view :class="PageCur=='plugin'?'text-green':'text-gray'">游戏</view>
 				</view>
-				<view class="action" @click="NavChange" >
+				<view class="action"  >
 					<view class='cuIcon-cu-image'>
 						<image src="/static/tabbar/about.png"></image>
 					</view>
 					<view :class="PageCur=='my'?'text-green':'text-gray'">打卡</view>
 				</view>
 			</view>
+			
 	</view>
 </template>
 
 <script>
 	var MerchantsList =require('../../static/merchants.js')
 	import ChatButton from "../chat/chatButton"
+	import CommentCard from "./commentCard"
 	export default {
 		data() {
 			return {
 				MerchantsList: MerchantsList.MerchantsList,
 				merchantsList: {},
 				collected: 0,
-				chantsid: 0
+				chantsid: 0,
+				collectStatus:false,
 			}
 		},
 		methods:{
@@ -92,10 +102,14 @@
 					url:`${url}?id=${this.chantsid}`
 					// url:`./commentOn?id=${this.chantsid}`
 				})
+			},
+			collectChange:function(){
+				this.collectStatus=!this.collectStatus
 			}
 		},
 		components: {
 			ChatButton,
+			CommentCard
 		},
 		onLoad: function(option) { //option为object类型，会序列化上个页面传递的参数
 			var id = option.id

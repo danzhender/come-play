@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App'
 
+import store from './store'
 import basics from './pages/basics/home.vue'
 Vue.component('basics',basics)
 
@@ -18,13 +19,14 @@ Vue.component('post',post)
 
 import cuCustom from './colorui/components/cu-custom.vue'
 Vue.component('cu-custom',cuCustom)
-
+Vue.prototype.$store = store
 Vue.config.productionTip = false
 
 App.mpType = 'app'
 
 const app = new Vue({
-    ...App
+    ...App,
+	store
 })
 app.$mount()
 

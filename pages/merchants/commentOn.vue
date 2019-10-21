@@ -7,12 +7,6 @@
 
 	<view class="merchantTile">{{merchantsList.title}}</view>
 	
-<!-- 	<view class="grid col-5 padding-sm submit-button" >
-		<view class="margin-tb-sm text-center">
-			<button class="cu-btn round" :class="['bg-' + 'orange' , shadow?'shadow':'']">提交</button>
-		</view>
-	-->
-
 	<view class="cu-form-group margin-top">
 		<textarea maxlength="-1" :disabled="modalName!=null" @input="textareaAInput" 
 		placeholder="亲,请分享口味,环境服务,食材等方面的体验" v-model="feedback.content"></textarea>
@@ -51,8 +45,7 @@
 		选择匿名点评后,商家将无法获取你的个人信息,同时你的点评也将不再对粉丝展示
 	</view>
 	<view class="padding flex flex-direction">
-		
-		<button class="cu-btn bg-orange margin-tb-sm lg">提交</button>
+		<button class="cu-btn bg-orange margin-tb-sm lg" @tap="suSubmit">提交</button>
 	</view>
 	</view>
 	
@@ -60,6 +53,7 @@
 	
 <script>
 	import MerchantsList from "../../static/merchants.json"
+	import { mapState } from 'vuex'
 	export default{
 		data(){
 			return {
@@ -125,6 +119,12 @@
 			textareaAInput(e) {
 				console.log(this.feedback.content) 
 			},
+			suSubmit(e){
+				 
+				uni.navigateBack({
+					
+				})
+			}
 		},
 		onLoad: function(option) { //option为object类型，会序列化上个页面传递的参数
 		console.log()

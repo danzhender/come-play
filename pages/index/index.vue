@@ -18,29 +18,46 @@
 		<my v-if="PageCur=='my'"></my>
 		<view class="cu-tabbar-height"></view>
 		<view class="cu-bar tabbar bg-white shadow foot">
+
 			<view class="action" @click="NavChange" data-cur="basics">
-				<view class='cuIcon-cu-image'>
-					<image :src="'/static/tabbar/basics' + [PageCur=='basics'?'_cur':''] + '.png'"></image>
+				<view class="cu-item"  v-if="PageCur=='basics'">
+					<text class="lg text-green cuIcon-shopfill"></text>
+					<text>主页</text>
 				</view>
-				<view :class="PageCur=='basics'?'text-green':'text-gray'">主页</view>
+				<view class="cu-item"  v-else>
+					<text class="lg text-green cuIcon-shop"></text>
+					<text>主页</text>
+				</view>
 			</view>
 			<view class="action" @click="NavChange" data-cur="component">
-				<view class='cuIcon-cu-image'>
-					<image :src="'/static/tabbar/component' + [PageCur == 'component'?'_cur':''] + '.png'"></image>
+				<view class="cu-item"  v-if="PageCur=='component'">
+					<text class="lg text-green cuIcon-picfill"></text>
+					<text>帖子</text>
 				</view>
-				<view :class="PageCur=='component'?'text-green':'text-gray'">帖子</view>
+				<view class="cu-item"  v-else>
+					<text class="lg text-green cuIcon-pic"></text>
+					<text>帖子</text>
+				</view>
 			</view>
 			<view class="action" @click="NavChange" data-cur="plugin">
-				<view class='cuIcon-cu-image'>
-					<image :src="'/static/tabbar/plugin' + [PageCur == 'plugin'?'_cur':''] + '.png'"></image>
+				<view class="cu-item"  v-if="PageCur=='plugin'">
+					<text class="lg text-green cuIcon-messagefill"></text>
+					<text>消息</text>
 				</view>
-				<view :class="PageCur=='plugin'?'text-green':'text-gray'">消息</view>
+				<view class="cu-item"  v-else>
+					<text class="lg text-green cuIcon-message"></text>
+					<text>消息</text>
+				</view>
 			</view>
 			<view class="action" @click="NavChange" data-cur="my">
-				<view class='cuIcon-cu-image'>
-					<image src="/static/tabbar/about.png"></image>
+				<view class="cu-item"  v-if="PageCur=='my'">
+					<text class="lg text-green cuIcon-peoplefill"></text>
+					<text>消息</text>
 				</view>
-				<view :class="PageCur=='my'?'text-green':'text-gray'">我的</view>
+				<view class="cu-item"  v-else>
+					<text class="lg text-green cuIcon-people"></text>
+					<text>消息</text>
+				</view>
 			</view>
 		</view>
 	</view>
