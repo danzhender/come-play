@@ -51,5 +51,6 @@
     "my": "/pages/my/home",
     "post": "/pages/post/home",
     "cu-custom": "/colorui/components/cu-custom"
-  }
+  },
+  "sitemapLocation": "sitemap35.json"
 }

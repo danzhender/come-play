@@ -2,14 +2,14 @@
 	<view class="cu-card case" :class="isCard?'no-card':''" @tap="commentDetail">
 		<view class="cu-item shadow">
 			<view class="image">
-				<image src="https://c-ssl.duitang.com/uploads/blog/201404/19/20140419125358_5xmMZ.thumb.700_0.jpeg"
+				<image src="/static/cake.jpg"
 				 mode="widthFix"></image>
 				<view class="cu-tag bg-blue">精品</view>
 				<view class="cu-bar bg-shadeBottom"> <text class="text-cut">最喜欢吃得奶油蛋糕!哈哈哈哈哈哈哈哈!</text></view>
 			</view>
 			<view class="cu-list menu-avatar">
 				<view class="cu-item">
-					<view class="cu-avatar round lg" style="background-image:url(/static/tim.jpg);"></view>
+					<view class="cu-avatar round lg" style="background-image:url(/static/head/123.png)"></view>
 					<view class="content flex-sub">
 						<view class="text-grey">隔壁老李</view>
 						<view class="text-gray text-sm flex justify-between">

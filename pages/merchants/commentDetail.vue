@@ -8,7 +8,7 @@
 			<view class="cu-item shadow">
 				<view class="cu-list menu-avatar">
 					<view class="cu-item">
-						<view class="cu-avatar round lg" style="background-image:url(/static/tim.jpg);"></view>
+						<view class="cu-avatar round lg" style="background-image:url(/static/head/123.png)"></view>
 						<view class="content flex-sub">
 							<view>隔壁老李</view>
 							<view class="text-gray text-sm flex justify-between">
@@ -21,7 +21,7 @@
 					这家店真是太太太太太太太太太太太太太太太太太太太太太太太太太太太太太太太太太太太太太太太太太太太太太太太太太太太好吃了
 				</view>
 				<view class="grid flex-sub padding-lr" :class="isCard?'col-3 grid-square':'col-1'">
-					<view class="bg-img" :class="isCard?'':'only-img'" style="background-image:url(/static/food.jpg);"
+					<view class="bg-img" :class="isCard?'':'only-img'" style="background-image:url(/static/food.jpg)"
 					 v-for="(item,index) in isCard?9:1" :key="index">
 					</view>
 				</view>
@@ -33,7 +33,7 @@
 
 				<view class="cu-list menu-avatar comment solids-top">
 					<view class="cu-item">
-						<view class="cu-avatar round" style="background-image:url(/static/tim2.jpg);"></view>
+						<view class="cu-avatar round" style="background-image:url(/static/head/234.png);"></view>
 						<view class="content">
 							<view class="text-grey">隔壁老王</view>
 							<view class="text-gray text-content text-df">

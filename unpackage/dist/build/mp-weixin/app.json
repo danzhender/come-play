@@ -32,7 +32,9 @@
     "pages/chat/home",
     "pages/post/home",
     "pages/my/home",
-    "pages/merchants/commentOn"
+    "pages/merchants/commentOn",
+    "pages/merchants/commentCard",
+    "pages/merchants/commentDetail"
   ],
   "subPackages": [],
   "window": {
