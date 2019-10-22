@@ -8,7 +8,7 @@
 			<view class="cu-item shadow">
 				<view class="cu-list menu-avatar">
 					<view class="cu-item">
-						<view class="cu-avatar round lg" style="background-image:url(/static/head/123.png)"></view>
+						<view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg)"></view>
 						<view class="content flex-sub">
 							<view>隔壁老李</view>
 							<view class="text-gray text-sm flex justify-between">
@@ -33,7 +33,7 @@
 
 				<view class="cu-list menu-avatar comment solids-top">
 					<view class="cu-item">
-						<view class="cu-avatar round" style="background-image:url(/static/head/234.png);"></view>
+						<view class="cu-avatar round" style="background-image:url(https://ossweb-img.qq.com/images/lol/img/champion/Morgana.png);"></view>
 						<view class="content">
 							<view class="text-grey">隔壁老王</view>
 							<view class="text-gray text-content text-df">
@@ -56,7 +56,7 @@
 					</view>
 
 					<view class="cu-item">
-						<view class="cu-avatar round" style="background-image:url(/static/tim.jpg);"></view>
+						<view class="cu-avatar round" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
 						<view class="content">
 							<view class="text-grey">隔壁老李</view>
 							<view class="text-gray text-content text-df">

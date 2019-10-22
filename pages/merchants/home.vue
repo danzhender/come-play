@@ -21,7 +21,18 @@
 					<text class="appraise-price">{{merchantsList.collected.price}}/人</text>
 				</view>
 				<view class="Separator"></view>
-				<chat-button :chantsid="chantsid"></chat-button>
+				<!-- 聊天室 -->
+				<view>
+					<chat-button :chantsid="chantsid" ></chat-button>
+				</view>
+				
+				<view class="Separator"></view>
+				<view>
+				<button class="cu-btn block bg-blue margin-tb-sm lg" >
+					<text class="cuIcon-game"></text>
+					<text class="Icon-font">玩小游戏赢代金卷</text>
+				</button>
+				</view>
 				<view class="Separator"></view>
 				<view class="Coupon-contains">
 					<view class="cu-avatar radius margin-left bg-orange">
@@ -42,6 +53,12 @@
 				</view>
 			</view>
 			</view>
+			
+			<view class="cu-item arrow concentration">
+
+					<text class="text-black">精选点评</text>
+			</view>
+			
 			<comment-card></comment-card>
 			<view class="cu-tabbar-height"></view>
 			<view class="cu-bar tabbar bg-white shadow foot">
@@ -63,11 +80,11 @@
 					<text>收藏</text>
 				</view>
 				</view>
-				<view class="action"  >
+				<view class="action" >
 					<view class='cuIcon-cu-image'>
 						<image :src="'/static/tabbar/plugin' + [PageCur == 'plugin'?'_cur':''] + '.png'"></image>
 					</view>
-					<view :class="PageCur=='plugin'?'text-green':'text-gray'">游戏</view>
+					<view :class="PageCur=='plugin'?'text-green':'text-gray'">分享</view>
 				</view>
 				<view class="action"  >
 					<view class='cuIcon-cu-image'>
@@ -245,6 +262,13 @@
 		margin-left: 20rpx;
 
 	}
+	
+	.concentration{
+		margin-left: 50rpx;
+		margin-top: 30rpx;
+		font-size: 40rpx;
+		font-style: bold;
+		}
 
 	button {
 

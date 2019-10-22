@@ -140,6 +140,12 @@
 	font-size: 35rpx;
 	margin-left: 20rpx;
 }
+.concentration.data-v-1e8373fe{
+	margin-left: 50rpx;
+	margin-top: 30rpx;
+	font-size: 40rpx;
+	font-style: bold;
+}
 button.data-v-1e8373fe {
 
 	width: 650rpx;

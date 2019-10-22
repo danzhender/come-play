@@ -9,7 +9,7 @@
 			</view>
 			<view class="cu-list menu-avatar">
 				<view class="cu-item">
-					<view class="cu-avatar round lg" style="background-image:url(/static/head/123.png)"></view>
+					<view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg)"></view>
 					<view class="content flex-sub">
 						<view class="text-grey">隔壁老李</view>
 						<view class="text-gray text-sm flex justify-between">

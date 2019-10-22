@@ -23,7 +23,10 @@
 	}
 </script>
 
-<style>
+<style scoped>
+	.cu-btn{
+		width: 650rpx;
+	}
 	.cuIcon-communityfill{
 		
 		font-size: 35rpx;

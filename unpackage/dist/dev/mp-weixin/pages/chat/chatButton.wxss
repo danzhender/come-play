@@ -1,11 +1,14 @@
 
-.cuIcon-communityfill{
+.cu-btn.data-v-7018a673{
+	width: 650rpx;
+}
+.cuIcon-communityfill.data-v-7018a673{
 	
 	font-size: 35rpx;
 	position: absolute;
 	left:190rpx;
 }
-.Icon-font{
+.Icon-font.data-v-7018a673{
 	/* text-align: center; */
 	position: relative;
 	left: 40rpx;

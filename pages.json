@@ -122,9 +122,18 @@
 		    "style" : {}
 		},
 		{
+		    "path" : "pages/chatroom/home",
+		    "style" : {}
+		},
+		{
 		    "path" : "pages/my/home",
 		    "style" : {}
 		},
+		{
+		    "path" : "pages/my/myDetail",
+		    "style" : {}
+		},
+		
 		{
 		    "path" : "pages/merchants/commentOn",
 		    "style" : {}

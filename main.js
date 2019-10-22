@@ -14,6 +14,9 @@ Vue.component('plugin',plugin)
 import my from './pages/my/home.vue'
 Vue.component('my',my)
 
+import chatroom from './pages/chatroom/home.vue'
+Vue.component('chatroom',chatroom)
+
 import post from './pages/post/home.vue'
 Vue.component('post',post)
 

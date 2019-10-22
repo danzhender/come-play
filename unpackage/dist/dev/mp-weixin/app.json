@@ -31,7 +31,9 @@
     "pages/merchants/home",
     "pages/chat/home",
     "pages/post/home",
+    "pages/chatroom/home",
     "pages/my/home",
+    "pages/my/myDetail",
     "pages/merchants/commentOn",
     "pages/merchants/commentCard",
     "pages/merchants/commentDetail"
@@ -49,8 +51,8 @@
     "components": "/pages/component/home",
     "plugin": "/pages/plugin/home",
     "my": "/pages/my/home",
+    "chatroom": "/pages/chatroom/home",
     "post": "/pages/post/home",
     "cu-custom": "/colorui/components/cu-custom"
-  },
-  "sitemapLocation": "sitemap35.json"
+  }
 }

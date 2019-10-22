@@ -1,0 +1,12 @@
+
+.nameCard.data-v-a5a5e0d8{
+	width: 300rpx;
+	margin-top: 10rpx;
+}
+.avatar-content.data-v-a5a5e0d8{
+	width: 450rpx;
+}
+.avatar-content .cu-tag.data-v-a5a5e0d8{
+	font-size: 30rpx;
+}
+
